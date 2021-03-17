@@ -1,0 +1,23 @@
+.Avatar{
+    margin-top: 3vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.Avatar img {
+    width: 15%;
+    
+}
+
+/* ***************************** */
+@media only screen and (max-width: 768px) {
+    .Avatar{
+        margin-top: 0.8em;
+    }
+    .Avatar img {
+        width: 55%;
+    }
+}

@@ -1,0 +1,111 @@
+.CardContainer{
+    padding: 0em 2em;
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+}
+
+.Card{
+    margin-top: 22px;
+    overflow: hidden;
+    width: 30%;
+    height: 270px;
+    border-radius: 16px;
+}
+
+.HoveredCard{   
+    background-color: transparent;  
+    color: transparent;
+    width: 100%;
+    text-align: center;
+    height: 100%;
+    padding: 28px;  
+    transition: all 0.4s  ease-in-out;
+
+}
+
+.HoveredCard p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.35em;
+    margin-top: 1.4em;
+}
+
+.HoveredCard button {
+    outline: none;
+    margin-top: 0.4em;
+    padding: 8px 32px;
+    border-radius: 45%;
+    border-radius: 50px 50px 50px 50px;
+    background-color: transparent;
+    font-size: 18px;
+    transition: all 0.1s  ease-in-out;
+    border: none;
+    color: transparent;
+}
+
+.HoveredCard button:hover {
+    background-color: #7510F7;
+}
+
+.Image{
+    transition: all .3s ease-in-out;
+    border-radius: 16px;
+    width: 100%;
+}
+
+.Card:hover  .Image  {
+    transform: scale(1.1);
+    
+}
+
+
+
+.Card:hover  .HoveredCard {
+    display: block;
+    color: #ffff;
+    top: -296px;
+    z-index: 100;
+    height: 100%;
+    background-color: #141C3A;
+    position: relative;
+
+}
+
+.Card:hover .HoveredCard button {
+    border: 2px #7510F7 solid;
+    color: #ffff;
+}
+
+/* ***************************** */
+@media only screen and (max-width: 768px) {
+    .CardContainer{
+        padding: 1.2em 0.8em;
+        display: flex;
+        flex-direction: column;
+        flex-flow: column;
+    }
+    .Card{
+        width: 100%;
+        height: 14em;
+        margin: 0.8em 0.4em 0en;
+    }
+    .HoveredCard p {
+        font-size: 1em;
+        margin-top: 1.4em;
+        padding: 0;
+    }
+    
+    .HoveredCard button {
+        margin: 1em 0em;
+    }
+
+    .Card:hover  .HoveredCard {
+        top: -228px;
+        z-index: 100;
+        height: 100%;
+        padding: 2em;
+        position: relative;
+    
+    }
+
+}

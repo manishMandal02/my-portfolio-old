@@ -1,0 +1,55 @@
+.Navigation {
+  padding: 0.8em 0.6em;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffff;
+  z-index: 100;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.MoveToTop {
+  display: none;
+  position: fixed;
+  bottom: 30px;
+  right: 20px;
+  z-index: 500;
+  border: none;
+  outline: none;
+  background-color: #7917f7;
+  color: white;
+  cursor: pointer;
+  padding: 0.4em 0.7em;
+  border-radius: 50%;
+  font-size: 22px;
+}
+
+.MoveToTop:hover {
+  color: #7917f7;
+  background-color: #ffff;
+}
+
+@media only screen and (max-width: 768px) {
+  .Navigation {
+    padding: 0.4em 0.2em 0.2em 0.2em;
+    background-color: #ffff;
+    align-items: flex-start;
+    box-shadow: 0 5px 5px 0 rgba(233, 240, 243, 0.5), 0 1px 0 0 #e6ecf8;
+  }
+
+  .MoveToTop {
+    padding: 0px 2px;
+    bottom: 18px;
+    right: 16px;
+    font-size: 1.6em;
+    border-radius: 50%;
+    padding: 0.26em 0.6em;
+  }
+  .MoveToTop:hover {
+    color: #ffff;
+    background-color: #7917f7;
+  }
+}

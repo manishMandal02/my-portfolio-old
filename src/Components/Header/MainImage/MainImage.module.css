@@ -1,0 +1,22 @@
+.MainImage{ 
+    margin-top: 6vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.MainImage img{
+
+    width: 40%;
+}
+
+/* ***************************** */
+@media only screen and (max-width: 768px) {
+    .MainImage{
+        margin-top: 1.6em;
+    }
+    .MainImage img{
+        width: 90%;
+    }
+}

@@ -1,0 +1,33 @@
+.Heading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+}
+
+.Heading h2 {
+    font-size: 2.9em;
+    letter-spacing: 0.06em;
+    margin-bottom: -0.4em;
+}
+
+.Heading p {
+    text-align: center;
+    font-size: 1.8em;
+    font-weight: 100;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* ***************************** */
+@media only screen and (max-width: 768px) {
+    .Heading h2{
+        margin: 0.6em 0 0.1em 0;
+        font-size: 2em;
+    }
+    .Heading p{
+        margin: 0;
+        padding: 0 1.1em;
+        font-size: 1.4em;
+    }
+}

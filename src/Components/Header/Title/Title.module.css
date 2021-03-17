@@ -1,0 +1,43 @@
+.Title {
+  text-align: center;
+  margin-top: 4.6em;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.Title h1 {
+  font-size: 2.8em;
+  letter-spacing: 0.09em;
+  color: #141c3a;
+}
+
+.Title p {
+  margin-top: 1vh;
+  color: #141c3a;
+  font-weight: 300;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1.8em;
+}
+
+/* ****************************************** */
+@media only screen and (max-width: 768px) {
+  .Title {
+    margin: 0;
+    margin-top: 2.8em;
+  }
+  .Title h1 {
+    font-size: 2em;
+    letter-spacing: 0.04em;
+    margin-bottom: 0.4em;
+  }
+  .Title p {
+    margin: 0;
+    margin-top: 0;
+    font-size: 1.3em;
+    font-weight: 300;
+    padding: 0 0.8em;
+  }
+}

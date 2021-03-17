@@ -1,0 +1,106 @@
+.NavMenu {
+  > ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0;
+    margin-bottom: -0.8em;
+    > a {
+      text-decoration: none;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+        sans-serif;
+      font-weight: 400;
+      color: #303030;
+      font-size: 1.6em;
+      letter-spacing: 0em;
+      margin-right: 0.4em;
+      transition: all 0.2s;
+      &:hover {
+        color: #7b1af8;
+      }
+    }
+    > button {
+      cursor: pointer;
+      background-color: #fff;
+      outline: none;
+      border-radius: 2em;
+      font-size: 1.3em;
+      font-weight: 500;
+      padding: 0.4em 0.96em;
+      color: #7b1af8;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS';
+      border: 2.2px solid #7b1af8;
+      margin-left: 0.4em;
+      margin-right: 0.8em;
+      transition: all 0.3s;
+      &:hover {
+        background-color: #7b1af8;
+        color: #ffff;
+      }
+    }
+  }
+}
+
+.BurgerMenuContainer {
+  display: none;
+}
+
+/* ****************************************** */
+@media only screen and (max-width: 768px) {
+  .NavMenu ul {
+    display: none;
+  }
+
+  .MobileMenuContainer {
+    margin: 0;
+    padding: 0;
+  }
+
+  .BurgerIcon {
+    width: 35px;
+    height: 0.3em;
+    border-radius: 20%;
+    background-color: #7b1af8;
+    margin: 0.4em 0.6em;
+  }
+
+  .BurgerMenuContainer {
+    margin: 0em 0em;
+    color: #7b1af8;
+    display: none;
+  }
+
+  .Cancel {
+    margin-bottom: -8px;
+    position: relative;
+    padding: 0;
+    top: -8px;
+    margin-right: 0.2em;
+    text-align: right;
+    font-size: 2.5em;
+  }
+
+  .MenuLine {
+    margin: 0px;
+    width: 17.5em;
+    height: 0.05em;
+    background-color: #e7eef6;
+    border: 1px solid #e7eef6;
+  }
+
+  .BurgerMenu ul {
+    margin-top: 0.1em;
+    margin-bottom: 0;
+    margin-right: 4.5em;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .BurgerMenu ul a {
+    text-align: center;
+    font-size: 1.4em;
+    text-decoration: none;
+    margin-top: 0.1em;
+  }
+}
