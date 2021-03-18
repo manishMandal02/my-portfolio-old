@@ -12,10 +12,11 @@
   font-size: 2.8em;
   letter-spacing: 0.09em;
   color: #141c3a;
+  margin-bottom: 0.4em;
 }
 
 .Title p {
-  margin-top: 1vh;
+  margin-top: 0em;
   color: #141c3a;
   font-weight: 300;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;

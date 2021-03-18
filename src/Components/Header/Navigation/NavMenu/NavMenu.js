@@ -1,29 +1,41 @@
-import { useEffect } from 'react';
-import { useHistory } from 'react-router-dom';
+import { useHistory, Link, useLocation } from 'react-router-dom';
 
 import classes from './NavMenu.module.scss';
 
 const NavMenu = () => {
   //initialize
   const history = useHistory();
+  const location = useLocation();
 
-  const navigateTo = (el) => {
-    el.scrollIntoView({ behavior: 'smooth', block: 'center', inline: 'start' });
+  const scrollBy = () => {
+    window.scrollBy(0, 40);
   };
 
-  let testimonials;
-  let recentWork;
-  let about;
+  const navigateTo = (el) => {
+    if (location.pathname !== '/') {
+      history.push('/');
+    }
 
-  useEffect(() => {
-    // eslint-disable-next-line
-    testimonials = document.querySelector('#testimonials');
-    // eslint-disable-next-line
-    recentWork = document.querySelector('#recent-work');
-    // eslint-disable-next-line
-    about = document.querySelector('#about');
-    // eslint-disable-next-line
-  }, []);
+    document.querySelector(el).scrollIntoView({
+      behavior: 'smooth',
+      block: 'start',
+      inline: 'end',
+    });
+  };
+
+  let testimonials = '#testimonials';
+  let recentWork = '#recentWorks';
+  let about = '#about';
+
+  // useEffect(() => {
+  //   // eslint-disable-next-line
+  //   testimonials = document.querySelector('#testimonials');
+  //   // eslint-disable-next-line
+  //   recentWork = document.querySelector('#recent-work');
+  //   // eslint-disable-next-line
+  //   about = document.querySelector('#about');
+  //   // eslint-disable-next-line
+  // }, []);
 
   const menuOpen = (e) => {
     let icon = e.target.closest('section');
@@ -38,28 +50,19 @@ const NavMenu = () => {
   };
 
   return (
-    <div>
+    <div className={classes.Container}>
       <div className={classes.NavMenu} id='navmenu'>
         <ul>
-          <a href='#about-me' onClick={() => navigateTo(about)}>
+          <Link to='/' onClick={() => navigateTo(about)}>
             AboutMe
-          </a>
-          <a
-            href='#recent-work'
-            onClick={() =>
-              recentWork.scrollIntoView({
-                behavior: 'smooth',
-                block: 'start',
-                inline: 'start',
-              })
-            }
-          >
+          </Link>
+          <Link to='/' onClick={() => navigateTo(recentWork)}>
             RecentWorks
-          </a>
-          <a href='#testimonials' onClick={() => navigateTo(testimonials)}>
+          </Link>
+          <Link to='/' onClick={() => navigateTo(testimonials)}>
             Testimonials
-          </a>
-          <button onClick={() => history.push('/contact-me')}>Say Hello</button>
+          </Link>
+          <button onClick={() => history.push('/contact')}>Say Hello</button>
         </ul>
       </div>
 
@@ -80,29 +83,33 @@ const NavMenu = () => {
 
           <div className={classes.BurgerMenu}>
             <ul>
-              <a
-                href='#about-me'
+              <Link
+                to='#about-me'
                 onClick={() => navigateTo(about)}
                 className={classes.active}
               >
                 AboutMe
-              </a>
-              <a
-                href='#recent-work'
-                onClick={() => navigateTo(recentWork)}
+              </Link>
+              <Link
+                to='#recent-work'
+                onClick={() => {
+                  navigateTo(recentWork);
+                }}
                 className={classes.active}
               >
                 RecentWorks
-              </a>
-              <a
-                href='#testimonials'
+              </Link>
+              <Link
+                to='#testimonials'
                 onClick={() => navigateTo(testimonials)}
                 className={classes.active}
               >
                 Testimonials
-              </a>
+              </Link>
 
-              <button>Say Hello</button>
+              <button onClick={() => history.push('/contact')}>
+                Say Hello
+              </button>
             </ul>
           </div>
         </section>

@@ -10,7 +10,7 @@ const Navigation = () => {
 
   useEffect(() => {
     // eslint-disable-next-line
-    myButton = document.getElementById('myBtn');
+    // myButton = document.getElementById('myBtn');
   }, []);
 
   window.onscroll = function () {
@@ -18,13 +18,16 @@ const Navigation = () => {
   };
 
   function scrollFunction() {
-    if (
-      document.body.scrollTop > 20 ||
-      document.documentElement.scrollTop > 20
-    ) {
-      myButton.style.display = 'block';
-    } else {
-      myButton.style.display = 'none';
+    myButton = document.getElementById('myBtn');
+    if (myButton) {
+      if (
+        document.body.scrollTop > 20 ||
+        document.documentElement.scrollTop > 20
+      ) {
+        myButton.style.display = 'block';
+      } else {
+        myButton.style.display = 'none';
+      }
     }
   }
 
