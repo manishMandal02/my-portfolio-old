@@ -48,12 +48,12 @@ const FloatingSocialIcons = () => {
         <a href='mailto:manishmandalj@gmail.com' className='list'>
           <i style={{ fontSize: '2.16em' }} className='fas fa-envelope'></i>
         </a>
-        <Link to='#' className='list' onClick={close}>
+        <button className='list' onClick={close}>
           <i
             style={{ color: '#414141', fontSize: '2.16em' }}
-            className='fas fa-times-circle'
+            className='fas fa-times'
           ></i>
-        </Link>
+        </button>
       </div>
     </div>
   );

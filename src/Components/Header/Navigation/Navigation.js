@@ -1,17 +1,10 @@
 import Logo from './Logo/Logo';
 import NavMenu from '../Navigation/NavMenu/NavMenu';
 
-import { useEffect } from 'react';
-
 import classes from './Navigation.module.css';
 
 const Navigation = () => {
   let myButton;
-
-  useEffect(() => {
-    // eslint-disable-next-line
-    // myButton = document.getElementById('myBtn');
-  }, []);
 
   window.onscroll = function () {
     scrollFunction();

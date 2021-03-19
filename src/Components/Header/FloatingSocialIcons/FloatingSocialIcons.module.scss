@@ -53,7 +53,29 @@
         color: #7917f7;
       }
       &:hover {
-        left: 18%;
+        left: 12%;
+      }
+    }
+    > button:nth-child(5) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #ffffff;
+      padding: 0.2em 0.4em;
+      border-radius: 0 0.4em 0.4em 0;
+      padding-top: 0.36em;
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      text-decoration: none;
+      margin: 0.16em 0;
+      position: relative;
+      transition: all 0.5s;
+      left: 0%;
+      > svg {
+        font-size: 2.4em;
+        color: #7917f7;
+      }
+      &:hover {
+        left: 12%;
       }
     }
   }
@@ -63,9 +85,11 @@
     top: 30%;
     .List {
       > a {
-        padding: 0.3em 0.4em 0.3em 0.42em;
+        padding: 0.2em 0.3em 0.2em 0.3em;
+        transition: all 0.5s;
+
         > svg {
-          font-size: 2.6em;
+          font-size: 2.4em;
         }
         &:hover {
           left: 8%;

@@ -1,0 +1,86 @@
+.Backdrop {
+  display: none;
+  position: fixed;
+  z-index: 500;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: #000000;
+  opacity: 0.9;
+  background-color: #00000066;
+  -webkit-animation: fadeIn 1.2s ease-in-out;
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+.Container {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  background-color: #ffff;
+  overflow-x: hidden;
+  transition: 0.4s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: #ffffff1a 0px 1px 1px 0px inset, #32325d40 0px 50px 100px -20px,
+    #0000004d 0px 30px 60px -30px;
+  .CloseMenu {
+    position: absolute;
+    top: 3%;
+    right: 7%;
+    > svg {
+      color: #7b1af8;
+      transform: scale(2.2);
+    }
+  }
+  > ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    margin-top: -2em;
+    > a {
+      text-decoration: none;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+        sans-serif;
+      font-weight: 500;
+      //   color: #7b1af8;
+      font-size: 1.7em;
+      letter-spacing: 0em;
+      transition: all 0.2s;
+      margin-bottom: 0.6em;
+      &:hover {
+        color: #7b1af8;
+      }
+    }
+    > a:nth-child(4) {
+      box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+      text-decoration: none;
+      cursor: pointer;
+      background-color: #fff;
+      outline: none;
+      border-radius: 2em;
+      font-size: 1.3em;
+      font-weight: 500;
+      padding: 0.4em 0.96em;
+      color: #7b1af8;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS';
+      border: 2.2px solid #7b1af8;
+      margin-left: 0.4em;
+      margin-right: 0.8em;
+      transition: all 0.4s;
+      &:hover {
+        background-color: #7b1af8;
+        color: #ffff;
+      }
+    }
+  }
+}

@@ -3,6 +3,7 @@ import { useState } from 'react';
 import emailjs from 'emailjs-com';
 
 import classes from './ContactForm.module.scss';
+import successImage from '../../Asset/Images/email-success.svg';
 
 const ContactForm = () => {
   const {
@@ -19,23 +20,57 @@ const ContactForm = () => {
   //form submit
   const submitHandler = async (e) => {
     e.preventDefault();
-    console.log(REACT_APP_USER_ID);
-    try {
-      await emailjs.send(
-        REACT_APP_SERVICE_ID,
-        REACT_APP_TEMPLATE_ID,
-        { name, email, message },
-        REACT_APP_USER_ID
-      );
-      setResponseMessage('success');
-    } catch (error) {
-      setResponseMessage('error');
+    if ((name, email, message)) {
+      try {
+        await emailjs.send(
+          REACT_APP_SERVICE_ID,
+          REACT_APP_TEMPLATE_ID,
+          { name, email, message },
+          REACT_APP_USER_ID
+        );
+        setResponseMessage('success');
+      } catch (error) {
+        setResponseMessage('error');
+      }
     }
   };
   return (
     <div className={classes.Container}>
       {responseMessage ? (
-        <> {responseMessage === 'success' ? <div></div> : <p>Error</p>}</>
+        <>
+          {' '}
+          {responseMessage === 'success' ? (
+            <div className={classes.EmailSuccess}>
+              <img src={successImage} alt='success' />
+              <h1>Message reeived. Thanks!</h1>
+              <p>I'II be in touch with you shortly.</p>
+              <a href='/'>Back to home</a>
+            </div>
+          ) : (
+            <div className={classes.EmailSuccess}>
+              <i
+                style={{ color: '#7b1af8' }}
+                class='fas fa-exclamation-triangle fa-4x'
+              ></i>
+              <h1>Sorry the message could not be sent</h1>
+              <p>
+                Please try again or{' '}
+                <a
+                  style={{
+                    textDecoration: 'none',
+                    color: '#7b1af8',
+                    fontFamily: 'sans-serif',
+                    fontSize: '1em',
+                  }}
+                  href='mailto:manishmandalj@gmail.com'
+                >
+                  mail me
+                </a>
+              </p>
+              <a href='/contact'>Try Again</a>
+            </div>
+          )}
+        </>
       ) : (
         <>
           {' '}

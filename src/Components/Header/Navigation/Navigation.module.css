@@ -1,5 +1,5 @@
 .Navigation {
-  padding: 0.8em 0.6em;
+  padding: 0.6em 0.6em;
   width: 100%;
   position: fixed;
   top: 0;
@@ -16,7 +16,7 @@
   position: fixed;
   bottom: 30px;
   right: 20px;
-  z-index: 500;
+  z-index: 100;
   border: none;
   outline: none;
   background-color: #7917f7;
@@ -37,7 +37,7 @@
     padding: 0.4em 0.2em 0.2em 0.2em;
     background-color: #ffff;
     align-items: flex-start;
-    box-shadow: 0 5px 5px 0 rgba(233, 240, 243, 0.5), 0 1px 0 0 #e6ecf8;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   }
 
   .MoveToTop {

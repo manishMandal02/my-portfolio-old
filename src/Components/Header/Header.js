@@ -12,7 +12,10 @@ const Header = () => {
   return (
     <div className={classes.Container}>
       <Navigation />
-      {location.pathname === '/' && (
+      {(location.pathname === '/' ||
+        location.pathname === '/about' ||
+        location.pathname === '/recentWorks' ||
+        location.pathname === '/testimonials') && (
         <>
           {' '}
           <Title />

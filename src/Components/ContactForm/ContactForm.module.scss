@@ -6,7 +6,7 @@
   justify-content: center;
   flex-direction: column;
   > p {
-    color: #4d4d4d;
+    color: #313131;
     letter-spacing: 0.014em;
     text-align: center;
     margin: 0;
@@ -85,6 +85,71 @@
     &:hover {
       background-color: #7b1af8;
       color: #ffff;
+    }
+  }
+  .EmailSuccess {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    > h1 {
+      font-size: 2.4em;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+        sans-serif;
+      margin: 0;
+      margin-top: 0.6em;
+    }
+    > p {
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+        sans-serif;
+      font-size: 1.5em;
+      font-weight: 300;
+      margin: 0;
+      margin-top: 0.2em;
+    }
+    > a {
+      text-decoration: none;
+      cursor: pointer;
+      background-color: #fff;
+      outline: none;
+      margin: 0;
+      margin-top: 1.6em;
+      border-radius: 2em;
+      font-size: 1.5em;
+      font-weight: 500;
+      padding: 0.3em 1.4em;
+      color: #7b1af8;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS';
+      border: 2.2px solid #7b1af8;
+      transition: all 0.4s;
+      &:hover {
+        background-color: #7b1af8;
+        color: #ffff;
+      }
+    }
+  }
+}
+
+/* ****************************************** */
+@media only screen and (max-width: 768px) {
+  .Container {
+    margin-top: 4em;
+    > p {
+      font-size: 1.3em;
+    }
+    > form {
+      max-width: 100%;
+      width: 90%;
+      > span {
+        flex-direction: column;
+      }
+    }
+    .EmailSuccess {
+      > h1 {
+        font-size: 2em;
+        margin-top: 1em;
+        margin-bottom: 0.2em;
+      }
     }
   }
 }

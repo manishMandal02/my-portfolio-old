@@ -1,17 +1,20 @@
-.Logo{
-    width: 0px;
-    margin-left: 4em;
+.Logo {
+  width: 0px;
+  margin-left: 4em;
 }
 
-.Logo img{
-    height: 3.1em;
+.Logo img {
+  height: 3.1em;
 }
 
 @media only screen and (max-width: 768px) {
-    .Logo{
-        margin-left: 0.8em;
-    }
-    .Logo img {
-        height: 2.6em;
-    }
+  .Logo {
+    margin-left: 0.8em;
+    outline: none;
+  }
+  .Logo img {
+    outline: none;
+
+    height: 2.6em;
+  }
 }

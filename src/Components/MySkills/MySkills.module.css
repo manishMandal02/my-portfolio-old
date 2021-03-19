@@ -1,12 +1,13 @@
 .MySkills {
   max-width: 100vw;
   overflow: hidden;
-  padding: 4.4em 2em 2em 2em;
+  padding: 4.4em 2em 1.6em 2em;
   background-image: linear-gradient(to bottom, #7510f7, #ffff);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border-bottom: 1.6px solid #e7e7e7;
 }
 
 /* ***************************** */

@@ -151,10 +151,7 @@ const skills = () => (
           <img src={git} alt='' />
           Git
         </p>
-        <p className={classes.List}>
-          <img src={react} alt='' />
-          React Native
-        </p>
+
         <p className={classes.List}>
           <img src={heroku} alt='' />
           Heroku
