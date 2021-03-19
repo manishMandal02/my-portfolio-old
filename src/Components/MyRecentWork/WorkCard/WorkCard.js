@@ -47,7 +47,7 @@ const workCard = () => (
         <span>
           <Link to='/project/portfolio'>More Info</Link>
           <a
-            href='https:/manishmandal.netlify.com/'
+            href='/https://manishmandal.netlify.com/'
             rel='noreferrer'
             target='_blank'
           >
