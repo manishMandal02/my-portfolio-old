@@ -1,11 +1,11 @@
 import React from 'react';
 
-import classes from './Growmart.module.scss';
+import classes from './GrowmartAdmin.module.scss';
 
 //images
-import deskTopImg from '../../../Asset/Images/growmart-desktop-mockup.png';
-import mobileImg from '../../../Asset/Images/growmart-mobile-mockup.png';
-import growmartAdmin from '../../../Asset/Images/growmart-admin-desktop-mockup.png';
+import deskTopImg from '../../../Asset/Images/growmart-admin-desktop-mockup.png';
+import mobileImg from '../../../Asset/Images/growmart-admin-mobile-mockup.png';
+import growmart from '../../../Asset/Images/growmart-desktop-mockup.png';
 import todo from '../../../Asset/Images/todo-desktop-mockup.png';
 import portfolio from '../../../Asset/Images/portfolio-desktop-mockup.png';
 
@@ -28,33 +28,32 @@ import npm from '../../../Asset/Images/npm.png';
 import chrome from '../../../Asset/Images/chrome.png';
 import { Link } from 'react-router-dom';
 
-const Growmart = () => {
+const GrowmartAdmin = () => {
   return (
     <div className={classes.Container}>
       <div className={classes.TopContainer}>
         <div className={classes.LeftWrapper}>
-          <p>GrowMart | Online Grocery Shopping</p>
-          <p>E-commerce site with AdminPanel</p>
+          <p>GrowMart AdminPanel </p>
+          <p>AdminPanel for Ecommerce</p>
           <span>
-            <p>ReactJs</p>
             <p>Ecommerce</p>
+            <p>AdminPanel</p>
+            <p>ReactJs</p>
             <p>SCSS</p>
             <p>Fullstack</p>
             <p>RestAPI</p>
             <p>Authentication</p>
-            <p>MobileFirst</p>
-            <p>PaymentGateway</p>
           </span>
           <div className={classes.ButtonWrapper}>
             <a
-              href='https://github.com/manishMandal02/growmart-frontend'
+              href='https://github.com/manishMandal02/admin-panel-growmart'
               rel='noreferrer'
               target='_blank'
             >
               View Code on GitHub<i className='fab fa-github'></i>
             </a>
             <a
-              href='https://growmart.netlify.app/'
+              href='https://growmartadmin.netlify.app/'
               rel='noreferrer'
               target='_blank'
             >
@@ -166,21 +165,21 @@ const Growmart = () => {
           <li>
             Website Live demo -{' '}
             <a
-              href='https://growmart.netlify.com/'
+              href='https://growmartadmin.netlify.com/'
               rel='noreferrer'
               target='_blank'
             >
-              https://growmart.netlify.com/
+              https://growmartadmin.netlify.com
             </a>
           </li>
           <li>
             Github respository -{' '}
             <a
-              href='https://github.com/manishMandal02/growmart-frontend'
+              href='https://github.com/manishMandal02/admin-panel-growmart'
               rel='noreferrer'
               target='_blank'
             >
-              https://github.com/manishMandal02/growmart-frontend
+              https://github.com/manishMandal02/admin-panel-growmart
             </a>
           </li>
           <li>
@@ -190,7 +189,7 @@ const Growmart = () => {
               rel='noreferrer'
               target='_blank'
             >
-              https://growmart.herokuapp.com/
+              https://growmart.herokuapp.com
             </a>
           </li>
           <li>
@@ -203,34 +202,17 @@ const Growmart = () => {
               https://github.com/manishMandal02/growmart-backend
             </a>
           </li>
-          <li>
-            Admin Panel project page -{' '}
-            <a href='/project/growmartAdmin' rel='noreferrer' target='_blank'>
-              Go to product page
-            </a>
-          </li>
-          <li>
-            Admin Live demo -{' '}
-            <a
-              href='https://growmartadmin.netlify.app/'
-              rel='noreferrer'
-              target='_blank'
-            >
-              https://growmartadmin.netlify.app/
-            </a>
-          </li>
         </ul>
         <p>
           <i className='fas fa-list-alt'></i>Features
         </p>
         <ul className={classes.Features}>
-          <li>Search and Filter products based on prices and ratings</li>
-          <li>Add Items to cart</li>
-          <li>Paypal payment gateway for quick checkout process</li>
-          <li>Edit your profile, veiw past order's</li>
-          <li>Admin Panel to view and edit - users, products, orders</li>
-          <li>Review system to add and edit reviews</li>
           <li>Login and Register with email and password</li>
+          <li>View, Edit and Create Users</li>
+          <li>View, Edit and Create Products</li>
+          <li>View & Edit Order</li>
+          <li>Paypal payment gateway for quick checkout process</li>
+          <li>Edit your profile and password</li>
         </ul>
         <p>
           <i className='fas fa-briefcase'></i>More Projects
@@ -238,25 +220,22 @@ const Growmart = () => {
       </div>
       <div className={classes.MoreProjects}>
         <div className={classes.Card}>
-          <img
-            src={growmartAdmin}
-            className={classes.Image}
-            alt='recent-works'
-          />
+          <img src={growmart} className={classes.Image} alt='recent-works' />
           <div className={classes.HoveredCard}>
             <span>
-              <p>Ecommerce</p>
-              <p>AdminPanel</p>
               <p>ReactJs</p>
+              <p>Ecommerce</p>
               <p>SCSS</p>
               <p>Fullstack</p>
               <p>RestAPI</p>
               <p>Authentication</p>
+              <p>MobileFirst</p>
+              <p>PaymentGateway</p>
             </span>
             <span>
-              <Link to='/project/growmartAdmin'>More Info</Link>
+              <Link to='/project/growmart'>More Info</Link>
               <a
-                href='https://growmartadmin.netlify.app/'
+                href='https://growmart.netlify.app/'
                 rel='noreferrer'
                 target='_blank'
               >
@@ -319,4 +298,4 @@ const Growmart = () => {
   );
 };
 
-export default Growmart;
+export default GrowmartAdmin;

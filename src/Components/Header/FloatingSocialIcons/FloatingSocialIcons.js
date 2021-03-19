@@ -1,5 +1,3 @@
-import { Link } from 'react-router-dom';
-
 import classes from './FloatingSocialIcons.module.scss';
 
 const FloatingSocialIcons = () => {

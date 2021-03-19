@@ -31,61 +31,62 @@ import socketIO from '../../../Asset/Images/socket-io.png';
 const skills = () => (
   <div className={classes.Skills}>
     <div className={classes.Card}>
-      <img src={frontend} alt='front-end' />
+      <img loading='lazy' src={frontend} alt='front-end' />
       <p>Front-end Developer</p>
       <p className={classes.Heading}>Languages, Libraries & Tools</p>
       <div className={classes.ListContainer}>
         <p className={classes.List}>
-          <img src={html} alt='' />
+          <img loading='lazy' src={html} alt='' />
           HTML
         </p>
         <p className={classes.List}>
-          <img src={css} alt='' />
+          <img loading='lazy' src={css} alt='' />
           CSS
         </p>
         <p className={classes.List}>
-          <img src={javascript} alt='' />
+          <img loading='lazy' src={javascript} alt='' />
           JavaScript
         </p>
         <p className={classes.List}>
-          <img src={react} alt='' />
+          <img loading='lazy' src={react} alt='' />
           ReactJs
         </p>
         <p className={classes.List}>
-          <img src={redux} alt='' />
+          <img loading='lazy' src={redux} alt='' />
           Redux
         </p>
         <p className={classes.List}>
-          <img src={sass} alt='' />
+          <img loading='lazy' src={sass} alt='' />
           Sass
         </p>
         <p className={classes.List}>
-          <img src={matrialUi} alt='' />
+          <img loading='lazy' src={matrialUi} alt='' />
           Material-UI
         </p>
       </div>
     </div>
     <div className={classes.Line}> </div>
     <div className={classes.Card}>
-      <img src={backend} alt='front-end' />
+      <img loading='lazy' src={backend} alt='front-end' />
       <p>Back-end Developer</p>
       <p className={classes.Heading}>Languages, Libraries & Tools</p>
       <div className={classes.ListContainer}>
         <p className={classes.List} style={{ marginBottom: '.2em' }}>
-          <img src={nodeJs} alt='' />
+          <img loading='lazy' src={nodeJs} alt='' />
           NodeJs
         </p>
         <p className={classes.List} style={{ marginBottom: '.2em' }}>
-          <img src={express} alt='' />
+          <img loading='lazy' src={express} alt='' />
           Express
         </p>
         <p className={classes.List}>
           {' '}
-          <img src={javascript} alt='' />
+          <img loading='lazy' src={javascript} alt='' />
           JavaScript
         </p>
         <p className={classes.List}>
           <img
+            loading='lazy'
             src={mongodb}
             alt=''
             style={{ width: '20px', marginRight: '10px' }}
@@ -94,78 +95,83 @@ const skills = () => (
         </p>
         <p className={classes.List}>
           {' '}
-          <img src={socketIO} alt='' />
+          <img loading='lazy' src={socketIO} alt='' />
           Socket.io
         </p>
         <p className={classes.List}>
           {' '}
-          <img src={graphql} alt='' />
+          <img loading='lazy' src={graphql} alt='' />
           GraphQl*
         </p>
         <p className={classes.List}>
           {' '}
-          <img src={jwt} alt='' style={{ width: '28px', marginRight: '6px' }} />
+          <img
+            loading='lazy'
+            src={jwt}
+            alt=''
+            style={{ width: '28px', marginRight: '6px' }}
+          />
           JWT
         </p>
       </div>
     </div>
     <div className={classes.Line}> </div>
     <div className={classes.Card}>
-      <img src={app} alt='front-end' />
+      <img loading='lazy' src={app} alt='front-end' />
       <p>App Developer</p>
       <p className={classes.Heading}>Languages, Libraries & Tools</p>
       <div className={classes.ListContainer}>
         <p className={classes.List}>
-          <img src={nodeJs} alt='' />
+          <img loading='lazy' src={nodeJs} alt='' />
           NodeJs
         </p>
         <p className={classes.List}>
-          <img src={javascript} alt='' />
+          <img loading='lazy' src={javascript} alt='' />
           JavaScript
         </p>
         <p className={classes.List}>
-          <img src={react} alt='' />
+          <img loading='lazy' src={react} alt='' />
           React Native*
         </p>
         <p className={classes.List}>
-          <img src={electron} alt='' />
+          <img loading='lazy' src={electron} alt='' />
           ElectronJs*
         </p>
         <p className={classes.List}>
-          <img src={androidStudio} alt='' />
+          <img loading='lazy' src={androidStudio} alt='' />
           Android Studio
         </p>
       </div>
     </div>
     <div className={classes.Line}> </div>
     <div className={classes.Card}>
-      <img src={designer} alt='front-end' />
+      <img loading='lazy' src={designer} alt='front-end' />
       <p>Other</p>
       <p className={classes.Heading}>Libraries & Tools</p>
       <div className={classes.ListContainer} style={{ paddingLeft: '26px' }}>
         <p className={classes.List}>
-          <img src={vsCode} alt='' />
+          <img loading='lazy' src={vsCode} alt='' />
           VS Code
         </p>
         <p className={classes.List}>
-          <img src={git} alt='' />
+          <img loading='lazy' src={git} alt='' />
           Git
         </p>
 
         <p className={classes.List}>
-          <img src={heroku} alt='' />
+          <img loading='lazy' src={heroku} alt='' />
           Heroku
         </p>
         <p className={classes.List}>
-          <img src={npm} alt='' />
+          <img loading='lazy' src={npm} alt='' />
           npm
         </p>
         <p className={classes.List}>
-          <img src={xd} alt='' />
+          <img loading='lazy' src={xd} alt='' />
           Adobe XD
         </p>
         <p className={classes.List}>
-          <img src={chrome} alt='' />
+          <img loading='lazy' src={chrome} alt='' />
           Developer Tools
         </p>
       </div>

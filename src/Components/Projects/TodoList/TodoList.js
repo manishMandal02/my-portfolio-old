@@ -1,12 +1,12 @@
 import React from 'react';
 
-import classes from './Growmart.module.scss';
+import classes from './TodoList.module.scss';
 
 //images
-import deskTopImg from '../../../Asset/Images/growmart-desktop-mockup.png';
-import mobileImg from '../../../Asset/Images/growmart-mobile-mockup.png';
+import deskTopImg from '../../../Asset/Images/todo-desktop-mockup.png';
+import mobileImg from '../../../Asset/Images/todo-mobile-mockup.png';
 import growmartAdmin from '../../../Asset/Images/growmart-admin-desktop-mockup.png';
-import todo from '../../../Asset/Images/todo-desktop-mockup.png';
+import growmart from '../../../Asset/Images/growmart-desktop-mockup.png';
 import portfolio from '../../../Asset/Images/portfolio-desktop-mockup.png';
 
 //techstack
@@ -20,7 +20,6 @@ import sass from '../../../Asset/Images/sass.png';
 import nodeJs from '../../../Asset/Images/node-js.png';
 import express from '../../../Asset/Images/express.png';
 import mongodb from '../../../Asset/Images/mongodb.png';
-import jwt from '../../../Asset/Images/jwt.png';
 import heroku from '../../../Asset/Images/heroku.png';
 import vsCode from '../../../Asset/Images/vs-code.png';
 import git from '../../../Asset/Images/git.png';
@@ -28,33 +27,34 @@ import npm from '../../../Asset/Images/npm.png';
 import chrome from '../../../Asset/Images/chrome.png';
 import { Link } from 'react-router-dom';
 
-const Growmart = () => {
+const TodoList = () => {
   return (
     <div className={classes.Container}>
       <div className={classes.TopContainer}>
         <div className={classes.LeftWrapper}>
-          <p>GrowMart | Online Grocery Shopping</p>
-          <p>E-commerce site with AdminPanel</p>
+          <p>Monhtly Planner</p>
+          <p>Todo List with Voice Assistant</p>
           <span>
+            <p>VoiceAssistant</p>
+            <p>TodoList</p>
             <p>ReactJs</p>
-            <p>Ecommerce</p>
             <p>SCSS</p>
             <p>Fullstack</p>
             <p>RestAPI</p>
+            <p>CRUD</p>
             <p>Authentication</p>
             <p>MobileFirst</p>
-            <p>PaymentGateway</p>
           </span>
           <div className={classes.ButtonWrapper}>
             <a
-              href='https://github.com/manishMandal02/growmart-frontend'
+              href='https://github.com/manishMandal02/to-do-with-voice-assistant'
               rel='noreferrer'
               target='_blank'
             >
               View Code on GitHub<i className='fab fa-github'></i>
             </a>
             <a
-              href='https://growmart.netlify.app/'
+              href='https://todo-voice.netlify.app/'
               rel='noreferrer'
               target='_blank'
             >
@@ -123,16 +123,6 @@ const Growmart = () => {
           </p>
 
           <p className={classes.List}>
-            {' '}
-            <img
-              loading='lazy'
-              src={jwt}
-              alt=''
-              style={{ width: '30px', height: '40px' }}
-            />
-            JWT
-          </p>
-          <p className={classes.List}>
             <img
               loading='lazy'
               src={vsCode}
@@ -166,57 +156,41 @@ const Growmart = () => {
           <li>
             Website Live demo -{' '}
             <a
-              href='https://growmart.netlify.com/'
+              href='https://todo-voice.netlify.com/'
               rel='noreferrer'
               target='_blank'
             >
-              https://growmart.netlify.com/
+              https://todo-voice.netlify.com/
             </a>
           </li>
           <li>
             Github respository -{' '}
             <a
-              href='https://github.com/manishMandal02/growmart-frontend'
+              href='https://github.com/manishMandal02/to-do-with-voice-assistant'
               rel='noreferrer'
               target='_blank'
             >
-              https://github.com/manishMandal02/growmart-frontend
+              https://github.com/manishMandal02/to-do-with-voice-assistant
             </a>
           </li>
           <li>
             Backedn Live demo -{' '}
             <a
-              href='https://growmart.herokuapp.com/'
+              href='https://todo-voice.herokuapp.com/'
               rel='noreferrer'
               target='_blank'
             >
-              https://growmart.herokuapp.com/
+              https://todo-voice.herokuapp.com/
             </a>
           </li>
           <li>
             Backedn respository -{' '}
             <a
-              href='https://github.com/manishMandal02/growmart-backend'
+              href='https://github.com/manishMandal02/todo-backend'
               rel='noreferrer'
               target='_blank'
             >
-              https://github.com/manishMandal02/growmart-backend
-            </a>
-          </li>
-          <li>
-            Admin Panel project page -{' '}
-            <a href='/project/growmartAdmin' rel='noreferrer' target='_blank'>
-              Go to product page
-            </a>
-          </li>
-          <li>
-            Admin Live demo -{' '}
-            <a
-              href='https://growmartadmin.netlify.app/'
-              rel='noreferrer'
-              target='_blank'
-            >
-              https://growmartadmin.netlify.app/
+              https://github.com/manishMandal02/todo-backend
             </a>
           </li>
         </ul>
@@ -224,13 +198,17 @@ const Growmart = () => {
           <i className='fas fa-list-alt'></i>Features
         </p>
         <ul className={classes.Features}>
-          <li>Search and Filter products based on prices and ratings</li>
-          <li>Add Items to cart</li>
-          <li>Paypal payment gateway for quick checkout process</li>
-          <li>Edit your profile, veiw past order's</li>
-          <li>Admin Panel to view and edit - users, products, orders</li>
-          <li>Review system to add and edit reviews</li>
-          <li>Login and Register with email and password</li>
+          <li>Simple Todo List ReactJs App with Voice Commands </li>
+          <li>Voice Command - "hey" greets the user</li>
+          <li>Voice Command - "add (itemname)" to add an item</li>
+          <li>Voice Command - "delete (itemname)" to delete an item</li>
+          <li>
+            Voice Command - "purcahsed (itemname)" to mark purcahsed an item
+          </li>
+          <li>
+            Voice Command - "let go of (itemname)" to let go of an item from
+            purcahsed list
+          </li>
         </ul>
         <p>
           <i className='fas fa-briefcase'></i>More Projects
@@ -290,22 +268,22 @@ const Growmart = () => {
         </div>
 
         <div className={classes.Card}>
-          <img src={todo} className={classes.Image} alt='recent-works' />
+          <img src={growmart} className={classes.Image} alt='recent-works' />
           <div className={classes.HoveredCard}>
             <span>
-              <p>TodoList</p>
-              <p>VoiceAssistant</p>
-              <p>VoiceAssistant</p>
               <p>ReactJs</p>
+              <p>Ecommerce</p>
+              <p>SCSS</p>
               <p>Fullstack</p>
-              <p>CRUD</p>
               <p>RestAPI</p>
+              <p>Authentication</p>
               <p>MobileFirst</p>
+              <p>PaymentGateway</p>
             </span>
             <span>
-              <Link to='/project/todo'>More Info</Link>
+              <Link to='/project/growmart'>More Info</Link>
               <a
-                href='https://todo-voice.netlify.app/'
+                href='https://growmart.netlify.app/'
                 rel='noreferrer'
                 target='_blank'
               >
@@ -319,4 +297,4 @@ const Growmart = () => {
   );
 };
 
-export default Growmart;
+export default TodoList;
