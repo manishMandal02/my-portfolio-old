@@ -1,12 +1,11 @@
 import { useEffect, useState } from 'react';
-import { useHistory, Link, useLocation } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import SideMenu from '../../MobileMenu/MobileMenu';
 
 import classes from './NavMenu.module.scss';
 
 const NavMenu = () => {
   //initialize
-  const history = useHistory();
   const location = useLocation();
 
   //state
