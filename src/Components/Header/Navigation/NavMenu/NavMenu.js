@@ -46,30 +46,16 @@ const NavMenu = () => {
     <div className={classes.Container}>
       <div className={classes.NavMenu} id='navmenu'>
         <ul>
-          <Link
-            to='#'
-            onClick={() => {
-              history.push('/about');
-            }}
-          >
-            AboutMe
-          </Link>
-          <Link
-            to='#'
-            onClick={() => {
-              history.push('/recentWork');
-            }}
-          >
-            RecentWork
-          </Link>
-          <Link
-            to='#'
-            onClick={() => {
-              history.push('/testimonials');
-            }}
-          >
-            Testimonials
-          </Link>
+          <Link to='/about'>AboutMe</Link>
+          <Link to='/recentWork'>RecentWork</Link>
+          <Link to='/testimonials'>Testimonials</Link>
+          <a href='/my-resume.pdf' rel='noreferrer' target='_blank'>
+            <i
+              style={{ marginRight: '.1em', color: 'e4e4e4' }}
+              class='fas fa-file-pdf'
+            ></i>
+            Resume
+          </a>
           <Link to='/contact'>Say Hello</Link>
         </ul>
       </div>

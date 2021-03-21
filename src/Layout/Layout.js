@@ -28,19 +28,16 @@ const layout = (props) => (
           <MySkills />
           <MyRecentWork />
           <Testimonials />
-          <Footer />
         </Route>
         <Route path='/recentWork' exact>
           <MySkills />
           <MyRecentWork />
           <Testimonials />
-          <Footer />
         </Route>
         <Route path='/testimonials' exact>
           <MySkills />
           <MyRecentWork />
           <Testimonials />
-          <Footer />
         </Route>
         <Route path='/' exact>
           <MySkills />
