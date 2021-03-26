@@ -48,6 +48,7 @@
     padding: 0;
     margin-top: -2em;
     > a {
+      color: #7b1af8;
       text-decoration: none;
       font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
         sans-serif;
@@ -57,11 +58,14 @@
       letter-spacing: 0em;
       transition: all 0.2s;
       margin-bottom: 0.6em;
+      > i {
+        margin-right: 0.2em;
+      }
       &:hover {
         color: #7b1af8;
       }
     }
-    > a:nth-child(4) {
+    > a:nth-child(5) {
       box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
       text-decoration: none;
       cursor: pointer;
