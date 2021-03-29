@@ -13,7 +13,8 @@
     border-radius: 8px;
     padding: 0;
     position: relative;
-    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
+      rgba(0, 0, 0, 0.23) 0px 6px 6px;
     > img {
       padding: 0;
       width: 100%;
@@ -115,6 +116,8 @@
       margin-top: 1em;
       height: 220px;
       border-radius: 3px;
+      box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
+        rgba(0, 0, 0, 0.23) 0px 6px 6px;
       > img {
         border-radius: 3px;
       }

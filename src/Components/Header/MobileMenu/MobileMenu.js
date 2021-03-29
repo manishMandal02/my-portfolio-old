@@ -78,13 +78,13 @@ const SideMenu = ({ open, close }) => {
           >
             Testimonials
           </Link>
-          <a href='/my-resume.pdf' rel='noreferrer' target='_blank'>
+          {/* <a href='/my-resume.pdf' rel='noreferrer' target='_blank'>
             <i
               style={{ marginRight: '.1em', color: 'e4e4e4' }}
               class='fas fa-file-pdf'
             ></i>
             Resume
-          </a>
+          </a> */}
           <Link to='/contact' onClick={closeMenu}>
             Say Hello
           </Link>
