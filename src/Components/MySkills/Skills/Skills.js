@@ -27,6 +27,11 @@ import electron from '../../../Asset/Images/electron.png';
 import androidStudio from '../../../Asset/Images/android-studio.png';
 import graphql from '../../../Asset/Images/graphql.png';
 import socketIO from '../../../Asset/Images/socket-io.png';
+import docker from '../../../Asset/Images/docker.png';
+import microservices from '../../../Asset/Images/microservices.png';
+import nextjs from '../../../Asset/Images/nextjs.png';
+import tailwindcss from '../../../Asset/Images/tailwindcss.svg';
+import jestIcon from '../../../Asset/Images/jest.png';
 
 const skills = () => (
   <div className={classes.Skills}>
@@ -50,6 +55,18 @@ const skills = () => (
         <p className={classes.List}>
           <img loading='lazy' src={react} alt='' />
           ReactJs
+        </p>
+        <p className={classes.List}>
+          <img loading='lazy' src={nextjs} alt='' />
+          NextJs
+        </p>
+        <p className={classes.List}>
+          <img loading='lazy' src={tailwindcss} alt='' />
+          Tailwind CSS
+        </p>
+        <p className={classes.List}>
+          <img loading='lazy' src={jestIcon} alt='' />
+          Jest
         </p>
         <p className={classes.List}>
           <img loading='lazy' src={redux} alt='' />
@@ -85,12 +102,7 @@ const skills = () => (
           JavaScript
         </p>
         <p className={classes.List}>
-          <img
-            loading='lazy'
-            src={mongodb}
-            alt=''
-            style={{ width: '20px', marginRight: '10px' }}
-          />
+          <img loading='lazy' src={mongodb} alt='' style={{ width: '20px', marginRight: '10px' }} />
           MongoDB
         </p>
         <p className={classes.List}>
@@ -101,17 +113,17 @@ const skills = () => (
         <p className={classes.List}>
           {' '}
           <img loading='lazy' src={graphql} alt='' />
-          GraphQl*
+          GraphQl
         </p>
         <p className={classes.List}>
           {' '}
-          <img
-            loading='lazy'
-            src={jwt}
-            alt=''
-            style={{ width: '28px', marginRight: '6px' }}
-          />
+          <img loading='lazy' src={jwt} alt='' style={{ width: '28px', marginRight: '6px' }} />
           JWT
+        </p>
+        <p className={classes.List}>
+          {' '}
+          <img loading='lazy' src={microservices} alt='' style={{ width: '28px', marginRight: '6px' }} />
+          Microservices
         </p>
       </div>
     </div>
@@ -131,11 +143,11 @@ const skills = () => (
         </p>
         <p className={classes.List}>
           <img loading='lazy' src={react} alt='' />
-          React Native*
+          React Native
         </p>
         <p className={classes.List}>
           <img loading='lazy' src={electron} alt='' />
-          ElectronJs*
+          ElectronJs
         </p>
         <p className={classes.List}>
           <img loading='lazy' src={androidStudio} alt='' />
@@ -173,6 +185,10 @@ const skills = () => (
         <p className={classes.List}>
           <img loading='lazy' src={chrome} alt='' />
           Developer Tools
+        </p>
+        <p className={classes.List}>
+          <img loading='lazy' src={docker} alt='' />
+          Docker
         </p>
       </div>
     </div>

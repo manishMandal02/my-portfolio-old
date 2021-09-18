@@ -28,8 +28,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  box-shadow: #ffffff1a 0px 1px 1px 0px inset, #32325d40 0px 50px 100px -20px,
-    #0000004d 0px 30px 60px -30px;
+  box-shadow: #ffffff1a 0px 1px 1px 0px inset, #32325d40 0px 50px 100px -20px, #0000004d 0px 30px 60px -30px;
   .CloseMenu {
     position: absolute;
     top: 3%;
@@ -50,22 +49,23 @@
     > a {
       color: #7b1af8;
       text-decoration: none;
-      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
-        sans-serif;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
       font-weight: 500;
       //   color: #7b1af8;
       font-size: 1.7em;
       letter-spacing: 0em;
       transition: all 0.2s;
       margin-bottom: 0.6em;
+
       > i {
-        margin-right: 0.2em;
+        margin-right: 0.6em;
       }
+
       &:hover {
         color: #7b1af8;
       }
     }
-    > a:nth-child(4) {
+    > a:nth-child(5) {
       box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
       text-decoration: none;
       cursor: pointer;

@@ -24,21 +24,22 @@
     }
     > a {
       text-decoration: none;
-      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
-        sans-serif;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
       font-weight: 500;
       color: #303030;
       font-size: 1.6em;
       letter-spacing: 0em;
       margin-right: 0.4em;
       transition: all 0.3s;
-
+      svg {
+        font-size: 0.85em;
+      }
       &:hover {
         color: #7b1af8;
       }
     }
 
-    > a:nth-child(4) {
+    > a:nth-child(5) {
       box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
       text-decoration: none;
       cursor: pointer;

@@ -48,13 +48,10 @@ const NavMenu = () => {
           <Link to='/about'>AboutMe</Link>
           <Link to='/recentWork'>RecentWork</Link>
           <Link to='/testimonials'>Testimonials</Link>
-          {/* <a href='/my-resume.pdf' rel='noreferrer' target='_blank'>
-            <i
-              style={{ marginRight: '.1em', color: 'e4e4e4' }}
-              class='fas fa-file-pdf'
-            ></i>
+          <a href='/manish-mandal-resume.pdf' rel='noreferrer' target='_blank'>
+            <i style={{ marginRight: '.1em', color: 'e4e4e4' }} class='fas fa-file-pdf'></i>
             Resume
-          </a> */}
+          </a>
           <Link to='/contact'>Say Hello</Link>
         </ul>
       </div>
